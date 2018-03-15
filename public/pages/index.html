@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css "href="../stylesheets/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="appBox">
+    <div class="container">
+      <header class="text-center">
+        <h1>Local Weather App</h1>
+      </header>
+      <section class="geolocation">
+        <h1>Today's weather in your location:</h1>
+        <h2><span id="location"></span></h2>
+      </section>
+      <section class="temperature">
+        <h1>
+          <span class="tempDisp"></span>
+          <a id="fahrenheit" class="selected" href="#">&#8457;</a> |
+          <a id="celsius" href="#">&#8451;</a>
+        </h1>
+      </section>
+      <section class="condition">
+        <h1><span class="conDisp"></span></h1>
+        <div class="highLow col">
+          <p>
+            <span class="high"></span>&deg;/
+            <span class="low"></span>&deg;
+          </p>
+        </div>
+        <div class="humidity col">
+          <p><i class="wi wi-humidity"></i> </p>
+        </div>
+        <div class="wind col">
+          <p>
+            <i class="wi wi-small-craft-advisory"></i>
+            <span class="direction"></span><span class="speed"></span>
+          </p>
+        </div>
+      </section>
+      <section class="forecast">
+        <h1>5 Day Forecast</h1>
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="../src/app.js"></script>
+</body>
+</html>
